@@ -10,7 +10,7 @@ interface NavBarProps {
 }
 
 const Header = () => {
-  let [isNavVisible, setNavIsVisible] = useState<boolean>(false);
+  const [isNavVisible, setNavIsVisible] = useState<boolean>(false);
   return (
     <header className="w-[90%] flex flex-col justify-between items-center">
       <div className="w-full flex flex-row justify-between items-center">

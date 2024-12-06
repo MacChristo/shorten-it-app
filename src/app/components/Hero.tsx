@@ -8,7 +8,7 @@ const Hero = () => {
         <h1 className="text-4xl font-bold">More than just shorter links</h1>
         <div className="flex flex-col justify-between items-center gap-3 w-[250px] self-center">
           <p className="text-base text-[#9e9aa7]">
-            Build your brand's recognition and get detailed insights on how your
+            Build your brands recognition and get detailed insights on how your
             links are performing.
           </p>
           <button

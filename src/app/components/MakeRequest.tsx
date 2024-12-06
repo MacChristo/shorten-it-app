@@ -68,10 +68,10 @@ const aliasCharacters = [
 ];
 
 const aliasLength = [4, 5, 6, 7, 8, 9, 10];
-let aliasNumber = aliasLength[Math.floor(Math.random() * aliasLength.length)];
+const aliasNumber = aliasLength[Math.floor(Math.random() * aliasLength.length)];
 
 const myToken = "Q2lVtpqZoueoyZiUqbUI6uEGy0hPMQyq01C0MHbIBeMe7C4VRpYiZ6BYTYIS";
-let myLink: string = "https://www.youtube.com/watch?v=8SkiIAbFbNs";
+const myLink: string = "https://www.youtube.com/watch?v=8SkiIAbFbNs";
 let myAlias: string = "";
 let myResponseLink: string;
 
@@ -87,7 +87,7 @@ for (let i = 0; i < aliasNumber; i++) {
 const postData = async () => {
   //   alert(`You made a request with this link: ${myLink}`);
   try {
-    let response = await fetch("https://api.tinyurl.com/create", {
+    const response = await fetch("https://api.tinyurl.com/create", {
       method: "POST",
       headers: {
         Authorization: `Bearer ${myToken}`,

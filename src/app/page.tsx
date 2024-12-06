@@ -1,4 +1,3 @@
-import MakeRequest from "./components/MakeRequest";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Statistics from "./components/Statistics";
@@ -10,7 +9,6 @@ const App = () => {
         <Header />
         <Hero />
         <Statistics />
-        {/* <MakeRequest /> */}
       </main>
       <Footer />
     </>
