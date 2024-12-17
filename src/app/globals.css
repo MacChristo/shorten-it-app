@@ -33,7 +33,7 @@ body {
 }
 
 .bg-img {
-  background-image: url('/images/illustration-working.svg');
+  background-image: url("/images/illustration-working.svg");
   height: 275px;
   width: 100%;
   background-repeat: no-repeat;
@@ -42,11 +42,10 @@ body {
 }
 
 .shorten-bg-img {
-  background-image: url('/images/bg-shorten-mobile.svg');
+  background-image: url("/images/bg-shorten-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 60px -24px;
-
 }
 
 .green-line:nth-child(3) {
@@ -56,26 +55,24 @@ body {
   display: none;
 }
 
-
 .error-msg {
   font-style: italic;
 }
 
 .boost-bg {
-  background-image: url('/images/bg-boost-mobile.svg');
+  background-image: url("/images/bg-boost-mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #nav-in {
   animation: nav-transit-in 300ms;
-
 }
 #nav-out {
   animation: nav-transit-out 500ms;
   background-color: aqua;
 }
-@keyframes nav-transit-in{
+@keyframes nav-transit-in {
   0% {
     transform: translateY(-1000px);
   }
@@ -84,11 +81,18 @@ body {
   }
 }
 
-@keyframes nav-transit-out{
+@keyframes nav-transit-out {
   0% {
     transform: translateY(0);
   }
   100% {
     transform: translateY(-1000px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bg-img {
+    background-size: contain;
+    background-position-x: 0;
   }
 }

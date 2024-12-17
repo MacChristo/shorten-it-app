@@ -10,9 +10,9 @@ const Statistics = () => {
       <section className="flex flex-col p-4 bg-[#bfbfbf66] w-full mt-12 pb-14 items-center">
         <MakeRequest />
 
-        <div className="flex flex-col justify-center w-[90%] text-center mt-12 gap-[40px]">
+        <div className="flex flex-col justify-center w-[90%] md:w-[80%] text-center mt-12 gap-[40px]">
           <div className="flex flex-col gap-3 pb-6 ">
-            <h2 className="text-[1.45rem] font-extrabold">
+            <h2 className="text-[1.45rem] text-[#232127] font-extrabold">
               Advanced Statistics
             </h2>
             <p className="text-[0.85rem] text-[#9e9aa7]">
@@ -20,7 +20,7 @@ const Statistics = () => {
               advanced statistics dashboard.
             </p>
           </div>
-          <div className="flex flex-col items-center w-full gap-3 ">
+          <div className="flex flex-col items-center w-full md:w-[80%] gap-3 ">
             {statisticsData.map((statsItems, index) => (
               <div
                 className="flex flex-col items-center w-full gap-3"
@@ -35,7 +35,9 @@ const Statistics = () => {
                     className="p-4 bg-[#3b3054] rounded-full relative bottom-[50px]"
                   />
                   <div className="flex flex-col relative bottom-[40px] gap-2">
-                    <h3 className="text-lg font-bold">{statsItems.alt}</h3>
+                    <h3 className="text-lg text-[#232127] font-bold">
+                      {statsItems.alt}
+                    </h3>
                     <p className="text-[0.8rem] text-[#9e9aa7]">
                       {statsItems.text}
                     </p>
@@ -50,7 +52,7 @@ const Statistics = () => {
         </div>
       </section>
       <section className="flex flex-col boost-bg h-[260px] bg-[#3b3054] p-4 w-full items-center justify-center">
-        <div className="flex flex-col items-center w-[90%] gap-4 py-4">
+        <div className="flex flex-col items-center w-[90%] md:w-[80%] gap-4 py-4">
           <h2 className="text-[1.45rem] text-[#ffffff] font-bold">
             Boost your links today
           </h2>

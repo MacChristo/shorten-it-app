@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 const App = () => {
   return (
     <>
-      <main className="mt-6 flex flex-col items-center">
+      <main className="mt-6 flex flex-col items-center md:w-full">
         <Header />
         <Hero />
         <Statistics />
